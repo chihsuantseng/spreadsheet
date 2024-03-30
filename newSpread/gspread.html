@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喘息服務試算</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/gspread.css">
+
+</head>
+
+<body>
+    <div id="g_spreadsheet" class="container">
+        <h1 id="g_spread">服務試算</h1>
+        <span id="g_spr">日期：</span><input type="date" id="g_date"  readonly >&nbsp;&nbsp;&nbsp;<span id="g_usetotal">前次累計使用額度：0</span>
+        &nbsp;&nbsp;&nbsp;<span id="g_addown">前次累計自費額：0</span>
+        <br><br>
+        <div id="g_back">
+            <h3>喘息服務G碼</h3>
+            <div class="table-responsive">
+                <table id="_table2" class="table table-striped">
+                    <thead>
+                        <tr class="table-light">
+                            <td>CMS等級</td>
+                            <td>
+                                <select class="g_ranged" onchange="Gallowance(this)">
+                                    <option value="0">第一級</option>
+                                    <option value="32420">第二級</option>
+                                    <option value="32420">第三級</option>
+                                    <option value="32420">第四級</option>
+                                    <option value="32420">第五級</option>
+                                    <option value="32420">第六級</option>
+                                    <option value="48510">第七級</option>
+                                    <option value="48510">第八級</option>
+                                </select>
+                            </td>
+                            <td>戶別</td>
+                            <td>
+                                <select class="g_typepay" id="" onchange="Gupdatetwo(this)">
+                                    <option value="0.16">一般戶</option>
+                                    <option value="0.05">中低收入戶</option>
+                                    <option value="0.0">低收入戶</option>
+                                </select>
+                            </td>
+                            <td>每年補助額度上限</td>
+                            <td class="g_allprice">0</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-danger">
+                            <th></th>
+                            <th>服務項目</th>
+                            <th>單價</th>
+                            <th>實際支付比率</th>
+                            <th>次數</th>
+                            <th>支付小計</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td id="g_service">GA09居家喘息服務</td>
+                            <td id="g_seven">770</td>
+                            <td class="g_realpay">0.16</td>
+                            <td><input type="number" class="g_quantity" id="g_quan" value="0" min="0"
+                                    oninput="GupdateSubtotal(this)"></td>
+                            <td class="g_subtotal">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div id="g_addtotal">當月累計總額(單價*次數)：0</div>
+            <div id="g_alltotal">補助剩餘額度：0</div>
+            <div id="g_ownexp">超出額度應自費額：0</div>
+            <div id="g_totalpay">總支付金額：NT$0</div>
+            <hr>
+            <button type="button" id="g_save" style="float: inline-start;"
+                class="btn btn-success btn-lg _save">儲存試算資料</button>
+            <button type="button" onclick="gdeleted()" class="btn btn-secondary btn-lg">清除試算資料</button>
+            <button type="button" onclick="gupdatecalu()" id="g_update" style="display: none;float:inline-start;"
+                class="btn btn-warning btn-lg">更新試算資料</button>
+            <button type="button" onclick="gapplyservice()" id="g_apply" style="display: none; float: right;"
+                class="btn btn-danger btn-lg">確認申請</button>
+            <!-- <button type="button" onclick="gchecked()" class="btn">檢查試算資料</button> -->
+            <br><br>
+            <h6>※支付小計=單價*實際支付比率*次數</h6>
+            <h6>※補助已使用額度=單價*次數</h6>
+            <h6>※補助剩餘額度=補助額上限-補助已使用額度</h6>
+            <h6>※超出額度應自費額=(累計總額-補助額上限)*(1-比率)-前次累計自費額</h6>
+            <br>
+
+        </div>
+    </div>
+    </div>
+    <script src="./js/gspread.js"></script>
+    <script src="./js/gspread2.js"></script>
+
+</body>
+
+</html>

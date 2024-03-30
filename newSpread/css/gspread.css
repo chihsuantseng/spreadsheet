@@ -1,0 +1,163 @@
+@media (min-width: 1024px) {
+    #g_spreadsheet {
+        width: 75%;
+        
+    }
+
+    #g_spread {
+        text-align: center;
+        margin-top: 1%;
+    }
+
+    #g_back {
+        border: 3px solid darkred;
+        border-radius: 50px;
+        padding: 20px;
+        background-color: white;
+    }
+    #g_spr,#g_date{
+        font-size: 20px;
+    }
+
+    #_table2{
+        font-size: 22px;
+    }
+    #g_ownexp,
+    #g_totalpay {
+        text-align: right;
+        margin-top: 5px;
+    }
+
+    .g_subtotal,
+    #g_ownexp {
+        font-weight: bold;
+        font-size: 22px;
+
+    }
+
+    #g_totalpay {
+        font-weight: bold;
+        font-size: 26px;
+        color: red;
+    }
+
+    #g_alltotal,#g_usetotal,#g_addown,#g_addtotal {
+        font-size: 22px;
+        color: darkblue;
+    }
+    
+    #g_quan {
+        width: 70px;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    #g_spreadsheet {
+        width: 90%;
+    }
+
+    #g_spread {
+        text-align: center;
+        margin-top: 1%;
+    }
+
+    #g_back {
+        border: 3px solid darkred;
+        border-radius: 50px;
+        padding: 20px;
+        background-color: white;
+    }
+    #g_spr,#g_date{
+        font-size: 20px;
+    }
+    #_table2{
+        font-size: 22px;
+    }
+    #g_ownexp,
+    #g_totalpay {
+        text-align: right;
+        margin-top: 5px;
+    }
+
+    .g_subtotal,
+    #g_ownexp {
+        font-weight: bold;
+        font-size: 22px;
+
+    }
+
+    #g_totalpay {
+        font-weight: bold;
+        font-size: 26px;
+        color: red;
+    }
+
+    #g_alltotal,#g_usetotal,#g_addown,#g_addtotal {
+        font-size: 22px;
+        color: darkblue;
+    }
+
+    #g_quan {
+        width: 70px;
+    }
+
+
+
+}
+
+@media (max-width: 767px) {
+
+    #g_spreadsheet {
+        width: 100%;
+    }
+
+    #g_spread {
+        text-align: center;
+        margin-top: 1%;
+    }
+
+    #g_back {
+        border: 3px solid darkred;
+        border-radius: 50px;
+        padding: 20px;
+        background-color: white;
+    }
+    #g_spr,#g_date{
+        font-size: 20px;
+    }
+    #_table2{
+        font-size: 22px;
+    }
+    #g_ownexp,
+    #g_totalpay {
+        text-align: right;
+        margin-top: 5px;
+    }
+
+    .g_subtotal,
+    #g_ownexp {
+        font-weight: bold;
+        font-size: 22px;
+
+    }
+
+    #g_totalpay {
+        font-weight: bold;
+        font-size: 26px;
+        color: red;
+    }
+
+    #g_alltotal,#g_usetotal,#g_addown,#g_addtotal {
+        font-size: 22px;
+        color: darkblue;
+    }
+
+    #g_quan {
+        width: 70px;
+    }
+
+
+}

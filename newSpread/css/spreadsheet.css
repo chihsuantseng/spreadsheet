@@ -1,0 +1,245 @@
+@media (min-width: 1024px) {
+
+#_spread{
+    text-align: center;
+    margin-top: 1%;
+    
+}
+
+#_spreadsheet{
+    width: 75%;
+    margin-bottom: 2%;
+}
+#_back{
+    border: 3px solid darkred;
+    border-radius: 50px;
+    padding: 20px;
+    background-color: white;
+}
+
+#_date,#spr_date{
+    font-size: 20px;
+}
+
+#_table{
+    font-size: 22px;
+}
+
+.btn-outline-primary {
+    color:darkcyan;
+    background-color:white;
+    border: 2px solid darkgreen;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .btn-outline-primary:hover,.btn-outline-primary:active:hover{
+    color: white;
+    background-color: darkcyan;
+    border: 2px solid darkorange;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .btn-outline-info {
+    color:darkorchid;
+    background-color: #fff;
+    border: 2px solid darkorchid;
+    font-size: large;
+    font-weight: bold;
+  }
+  .btn-outline-info:hover,.btn-outline-info:active:hover{
+    color: #fff;
+    background-color: darkorchid;
+    border: 2px solid darkorange;
+    font-size: large;
+    font-weight: bold;
+
+  }
+
+#_total,
+#_ownexp,
+#_totalpay
+{
+    text-align: right;
+    margin-top: 5px;
+}
+#_total,#_ownexp {
+    font-weight: bold;
+    font-size: 22px;
+    
+}
+#_totalpay {
+    font-weight: bold;
+    font-size: 26px;
+    color: red;
+}
+#_alltotal,#_usetotal,#_addtotal,#_addown{
+    font-size: 22px;
+    color: darkblue;
+}
+#_quan,#g_quan{
+    width: 70px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    #_spread{
+        text-align: center;
+        margin-top: 1%;
+    }
+    
+    #_spreadsheet{
+        width: 90%;
+        margin-bottom: 2%;
+    }
+
+    #_back{
+        border: 3px solid darkred;
+        border-radius: 50px;
+        padding: 20px;
+        background-color: white;
+    }
+
+    #_table{
+        font-size: 20px;
+    }
+
+    .btn-outline-primary {
+        color:darkcyan;
+        background-color:white;
+        border: 2px solid darkgreen;
+        font-size: large;
+        font-weight: bold;
+      }
+    
+      .btn-outline-primary:hover,.btn-outline-primary:active:hover{
+        color: white;
+        background-color: darkcyan;
+        border: 2px solid darkorange;
+        font-size: large;
+        font-weight: bold;
+      }
+    
+      .btn-outline-info {
+        color:darkorchid;
+        background-color: #fff;
+        border: 2px solid darkorchid;
+        font-size: large;
+        font-weight: bold;
+      }
+      .btn-outline-info:hover,.btn-outline-info:active:hover{
+        color: #fff;
+        background-color: darkorchid;
+        border: 2px solid darkorange;
+        font-size: large;
+        font-weight: bold;
+    
+      }
+    
+    #_total,
+    #_ownexp,
+    #_totalpay {
+        text-align: right;
+        margin-top: 5px;
+    }
+    #_total,#_ownexp{
+        font-weight: bold;
+        font-size: 18px;
+        
+    }
+    #_totalpay{
+        font-weight: bold;
+        font-size: 22px;
+        color: red;
+    }
+    #_alltotal,#_usetotal,#_addtotal,#_addown{
+        font-size: 22px;
+        color: darkblue;
+    }
+    #_quan{
+        width: 70px;
+    }
+    }
+    @media (max-width: 767px) {
+
+        #_spread{
+            text-align: center;
+            margin-top: 1%;
+        }
+        #_spreadsheet{
+            width: 100%;
+            margin-bottom: 2%;
+        }
+        
+        #_back{
+            border: 3px solid darkred;
+            border-radius: 50px;
+            padding: 20px;
+            background-color: white;
+        }
+        
+        .btn-outline-primary {
+            color:darkcyan;
+            background-color:white;
+            border: 2px solid darkgreen;
+            font-size: large;
+            font-weight: bold;
+          }
+        
+          .btn-outline-primary:hover,.btn-outline-primary:active:hover{
+            color: white;
+            background-color: darkcyan;
+            border: 2px solid darkorange;
+            font-size: large;
+            font-weight: bold;
+          }
+        
+          .btn-outline-info {
+            color:darkorchid;
+            background-color: #fff;
+            border: 2px solid darkorchid;
+            font-size: large;
+            font-weight: bold;
+          }
+          .btn-outline-info:hover,.btn-outline-info:active:hover{
+            color: #fff;
+            background-color: darkorchid;
+            border: 2px solid darkorange;
+            font-size: large;
+            font-weight: bold;
+        
+          }
+
+          #_table{
+            font-size: 20px;
+        }
+
+        #_total,
+        #_ownexp,
+        #_totalpay
+        {
+            text-align: right;
+            margin-top: 5px;
+        }
+        #_total,#_ownexp {
+            font-weight: bold;
+            font-size: 18px;
+            
+        }
+        #_totalpay {
+            font-weight: bold;
+            font-size: 22px;
+            color: red;
+        }
+        #_alltotal,#_usetotal,#_addtotal,#_addown,#g_alltotal{
+            font-size: 22px;
+            color: darkblue;
+        }
+        #_quan{
+            width: 70px;
+        }
+        }
+        
+    
